@@ -1,0 +1,25 @@
+{
+  "version": 8,
+  "configurePresets": [
+    {
+      "name": "Linux-release-x86_64",
+      "displayName": "Linux release x86_64 preset",
+      "description": "Sets Unix Makefiles generator, build directory",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "Linux-debug-x86_64",
+      "displayName": "Linux debug x86_64 preset",
+      "description": "Sets Unix Makefiles generator, build directory",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build-linux-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ]
+}
